@@ -6,9 +6,9 @@ import FeedbackList from "./components/FeedbackList";
 import feedbackData from "./data/FeedbackData";
 import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
+import {FeedbackProvider} from './context/FeedbackContext';//curly braces because FeedbackProvider is not a default export
 import AboutPage from './pages/AboutPage';
 import AboutIconLink from './components/AboutIconLink';
-import Post from './components/Post';
 
 function App() {
   const [feedback, setFeedback] = useState(feedbackData);
@@ -24,6 +24,7 @@ function App() {
   }
 
   return (
+    <FeedbackProvider>
     <Router>
       <Header />
       <Routes>
@@ -35,10 +36,10 @@ function App() {
             </>
           } />
           <Route exact path='/about' element={<AboutPage />}/>
-          <Route exact path='/post/*' element={<Post/>}/>
       </Routes>
       <AboutIconLink/>
     </Router>
+    </FeedbackProvider>
   );
 }
 
