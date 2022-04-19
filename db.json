@@ -6,19 +6,19 @@
       "text": "This is feedback item 1 coming from backend"
     },
     {
-      "id": 3,
+      "text": "This is feedback item 2 coming from backend",
       "rating": 8,
-      "text": "This is feedback item 3 coming from backend"
+      "id": 3
     },
     {
-      "rating": 9,
-      "text": "New feedback item",
-      "id": 4
+      "text": "Hello from the other side",
+      "rating": 7,
+      "id": 6
     },
     {
-      "text": "Meowliet loves Apple juiss",
-      "rating": 8,
-      "id": 5
+      "text": "This is my review",
+      "rating": 7,
+      "id": 7
     }
   ]
 }
